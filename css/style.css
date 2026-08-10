@@ -1,0 +1,532 @@
+/*ZA SVE*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.glavnaNavigacija{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 80px;
+}
+
+.logo img{
+    height: 60px;
+    width: 150px;
+    display: block;
+    
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: absolute;
+    right: 15%;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3 ease;
+    
+    
+}
+.nav a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+/*INDEX*/
+.ime {
+    margin-top: 60px;
+    padding-left: 15%;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    width: 50%;
+    line-height: 1.2;
+}
+
+.slogan {
+    padding-left: 15%;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px; 
+}
+
+.slogan h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.indexP {
+    padding-left: 15%;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px; 
+    color: white;
+}
+
+.pocetnaslika {
+    position: absolute;
+    top: 150px;
+    right: 15%;
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.dugme1 {
+   text-decoration: none;
+   font-size: 25px;
+   position: relative;
+   left: 30%;
+   color: red;
+}
+
+.dugme1:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+.uslugeSlike {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.uslugaKartica {
+    position: relative;
+    width: 22%;
+    height: 450px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.uslugeSlike img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.5 ease;
+   
+}
+
+.tekst {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+}
+
+.podnaslov {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 0;
+    
+}
+
+.dugme2 {
+    display: flex;
+    justify-content: center;
+}
+
+.dugme2 button {
+    background-color: black;
+    border: 1px solid blue;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.dugme2 button a {
+    text-decoration: none;
+    color: red;
+}
+
+.dugme2 button:hover {
+    border: 1px solid red;
+    transition: 0.5s;
+}
+
+/*USLUGE*/
+.naslov {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.naslov img {
+    width: 30%;
+}
+
+.usluge {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 80PX;
+    margin-bottom: 20px;
+}
+
+.usluga-red {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+}
+
+.usluga-red.obrnuto {
+    flex-direction: row-reverse;
+}
+
+.tekst-blok {
+    flex: 1; 
+    position: relative;
+    justify-content: center;
+}
+
+.tekst-blok h2 {
+    font-size: 50px;
+    color: red;
+    margin-bottom: 30px;
+    padding-left: 200px;
+}
+
+.tekst-blok ul {
+    list-style-type: circle;
+    padding-left: 250px;
+}
+
+.tekst-blok li {
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+.usluga-red img {
+    flex: 1; 
+    max-width: 40%; 
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.tekst2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.tekst3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.tekst3 a {
+   text-decoration: none;
+   color: red;
+}
+
+.tekst3 a:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+.logo img {
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.slikaCenovnik {
+    display: block;
+    margin: 40px auto;
+    width: 30%; }
+
+table {
+        width: 1500px;
+    padding: 10px;
+    border: 5px solid red;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.hederTabele {
+   font-size: 30px;
+}
+
+td{
+    color: white;
+    padding: 5px;
+    font-family: font1;
+    padding: 10px;
+}
+
+.cenovnik p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: font2;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s;
+}
+
+.animacija {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+}
+
+.animacija h1 {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    padding: 20px 40px;
+    border: 4px solid #ffff00;
+    border-radius: 15px;
+    display: inline-block;
+    
+    animation: kacenjeZnak 0.5s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+.cenovnikP2{
+     color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cenovnikP3{
+     color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+@keyframes kacenjeZnak {
+    0% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
+
+.uslugeP2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/*KONTAKT*/
+
+.slikaKontakt{
+     display: block;
+    margin: 40px auto;
+    width: 30%;
+}
+
+ .hero{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .hero-content{
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .kontaktP{
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .kontakt-info h2{
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .hero::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .hero a{
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .hero a:hover{
+            text-decoration: underline;
+        }
+
+/*FUTER*/
+
+.futer {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.futerKontener {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: center; 
+  text-align: center;      
+}
+
+.futerKontakt h4 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.futerKontakt ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.futerKontakt li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #dddddd;
+}
+
+.futerKontakt a {
+  color: #ff0000; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.futerKontakt a:hover {
+  text-decoration: underline;
+}
+
+
+.futerKopirajt {
+  background-color: #050505; 
+  border-top: 1px solid #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.futerSlika {
+  max-height: 50px; 
+  width: auto;
+  display: block;
+}
+
+.futerKopirajt p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+/*JAVA SCRIPT*/
+table tr td:nth-child(3) {
+  transition: transform 0.25s ease, color 0.25s ease, font-weight 0.25s ease;
+  display: table-cell;
+}
+
+.uvecana-cena {
+  transform: scale(1.20); 
+  color: #ff0000;         
+  font-weight: bold;      
+
+table tr td:nth-child(2) {
+  cursor: pointer;
+}
+}
