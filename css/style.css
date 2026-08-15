@@ -1,14 +1,20 @@
+/* =======================================================
+   ZA SVE
+   ======================================================= */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
 }
+
 .glavnaNavigacija{
     display: flex;
     justify-content: space-between;
@@ -16,12 +22,13 @@ body{
     background-color: black;
     padding: 15px 80px;
 }
+
 .logo img{
     height: 60px;
     width: 150px;
     display: block;
-    
 }
+
 .nav {
     display: flex;
     gap: 30px;
@@ -29,17 +36,23 @@ body{
     position: absolute;
     right: 15%;
 }
+
 .nav a{
     color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
 }
+
 .nav a:hover {
     color: red;
-    transition: 0.5s;
 }
+
+/* =======================================================
+   INDEX
+   ======================================================= */
+
 .ime {
     margin-top: 60px;
     padding-left: 15%;
@@ -50,12 +63,14 @@ body{
     width: 50%;
     line-height: 1.2;
 }
+
 .slogan {
     padding-left: 15%;
     width: 50%;
     margin-top: 20px;
     margin-bottom: 30px; 
 }
+
 .slogan h2 {
     font-size: 40px;
     color: white;
@@ -63,6 +78,7 @@ body{
     line-height: 1.6;
     max-width: 450px;
 }
+
 .indexP {
     padding-left: 15%;
     width: 50%;
@@ -70,6 +86,7 @@ body{
     margin-bottom: 30px; 
     color: white;
 }
+
 .pocetnaslika {
     position: absolute;
     top: 150px;
@@ -79,6 +96,7 @@ body{
     height: auto;
     object-fit: contain;
 }
+
 .dugme1 {
    text-decoration: none;
    font-size: 25px;
@@ -86,10 +104,12 @@ body{
    left: 30%;
    color: red;
 }
+
 .dugme1:hover {
     color: blue;
     transition: 0.5s;
 }
+
 .uslugeSlike {
     margin-top: 40px;
     display: flex;
@@ -97,6 +117,7 @@ body{
     gap: 20px;
     padding: 20px;
 }
+
 .uslugaKartica {
     position: relative;
     width: 22%;
@@ -104,13 +125,14 @@ body{
     border-radius: 4px;
     overflow: hidden;
 }
+
 .uslugeSlike img {
     width: 100%;
     height: 100%;
     display: block;
-    transition: transform 0.5 ease;
-   
+    transition: transform 0.5s ease;
 }
+
 .tekst {
     position: absolute;
     bottom: 0;
@@ -124,6 +146,7 @@ body{
     display: flex;
     align-items: flex-end;
 }
+
 .podnaslov {
     font-size: 40px;
     color: white;
@@ -132,12 +155,13 @@ body{
     margin-left: 40%;
     margin-top: 10%;
     margin-bottom: 0;
-    
 }
+
 .dugme2 {
     display: flex;
     justify-content: center;
 }
+
 .dugme2 button {
     background-color: black;
     border: 1px solid blue;
@@ -148,58 +172,73 @@ body{
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
 .dugme2 button a {
     text-decoration: none;
     color: red;
 }
+
 .dugme2 button:hover {
     border: 1px solid red;
     transition: 0.5s;
 }
+
+/* =======================================================
+   USLUGE / CENOVNIK
+   ======================================================= */
+
 .naslov {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 .naslov img {
     width: 30%;
 }
+
 .usluge {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    margin-top: 80PX;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
+
 .usluga-red {
     display: flex;
     align-items: center; 
     gap: 40px;
 }
+
 .usluga-red.obrnuto {
     flex-direction: row-reverse;
 }
+
 .tekst-blok {
     flex: 1; 
     position: relative;
-    justify-content: center;
 }
+
 .tekst-blok h2 {
     font-size: 50px;
     color: red;
     margin-bottom: 30px;
     padding-left: 200px;
 }
+
 .tekst-blok ul {
     list-style-type: circle;
     padding-left: 250px;
 }
+
 .tekst-blok li {
     margin-bottom: 10px;
     color: white;
     line-height: 1.5;
     font-size: 30px;
 }
+
 .usluga-red img {
     flex: 1; 
     max-width: 40%; 
@@ -207,12 +246,14 @@ body{
     object-fit: cover;
     border-radius: 8px; 
 }
+
 .tekst2 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     font-size: 25px;
 }
+
 .tekst3 {
     display: flex;
     justify-content: center;
@@ -220,65 +261,82 @@ body{
     margin-bottom: 50px;
     font-size: 25px;
 }
+
 .tekst3 a {
    text-decoration: none;
    color: red;
 }
+
 .tekst3 a:hover {
     color: blue;
     transition: 0.5s;
 }
+
 .logo img {
     max-height: 80px;
     margin-bottom: 15px;
+}
 
 .slikaCenovnik {
     display: block;
     margin: 40px auto;
-    width: 30%; }
+    width: 30%; 
+}
+
+/* Kontejner za tabelu zbog skrola na telefonu */
+.tabela-kontejner {
+    width: 95%;
+    max-width: 1500px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
 table {
-        width: 1500px;
-    padding: 10px;
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
     border: 5px solid red;
-    justify-content: center;
     font-family: sans-serif;
     text-transform: uppercase;
-    padding: 15px;
     margin-bottom: 30px;
 }
+
 .hederTabele {
    font-size: 30px;
 }
+
 td{
     color: white;
-    padding: 5px;
-    font-family: font1;
     padding: 10px;
+    border-bottom: 1px solid #333;
 }
+
 .cenovnik p{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    font-family: font2;
     margin-left: 70px;
     margin-right: 70px;
-    font-size: 20px;
     text-align: center;
 }
+
 a {
     color: #ff0000;
     text-decoration: none;
     font-weight: bold;
 }
+
 a:hover {
     text-decoration: none;
     color: blue;
     transition: 0.5s;
 }
+
 .animacija {
     display: flex;
     justify-content: center;
     margin: 50px 0 30px 0;
 }
+
 .animacija h1 {
     background-color: #ff0000;
     color: #ffffff;
@@ -291,16 +349,19 @@ a:hover {
     animation: kacenjeZnak 0.5s ease-in-out infinite alternate;
     transform-origin: center;
 }
+
 .cenovnikP2{
-     color: white;
+    color: white;
     font-size: 30px;
     text-align: center;
 }
+
 .cenovnikP3{
-     color: white;
+    color: white;
     font-size: 25px;
     text-align: center;
 }
+
 @keyframes kacenjeZnak {
     0% {
         transform: rotate(-8deg);
@@ -309,6 +370,7 @@ a:hover {
         transform: rotate(8deg);
     }
 }
+
 .uslugeP2 {
     max-width: 800px;
     margin: 0 auto;
@@ -317,71 +379,82 @@ a:hover {
     font-size: 1.2rem;
     color: #ffffff;
 }
+
+/* =======================================================
+   KONTAKT
+   ======================================================= */
+
 .slikaKontakt{
-     display: block;
+    display: block;
     margin: 40px auto;
     width: 30%;
 }
- .hero{
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
 
-        .hero img{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all 0.5s ease;
-        }
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 
-        .hero-content{
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
+.hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
 
-        .kontaktP{
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+.hero-content{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
-        .kontakt-info h2{
-            margin: 10px 0;
-            font-size: 1.5rem;
-        }
+.kontaktP{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-        .hero::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.4);
-            z-index: 1;
-        }
+.kontakt-info h2{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
 
-        .hero a{
-            color: #00aaff;
-            text-decoration: none;
-        }
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
 
-        .hero a:hover{
-            text-decoration: underline;
-        }
+.hero a{
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.hero a:hover{
+    text-decoration: underline;
+}
+
+/* =======================================================
+   FUTER
+   ======================================================= */
+
 .futer {
   background-color: #000000;
   color: #ffffff;
@@ -389,37 +462,44 @@ a:hover {
   padding-top: 30px;
   width: 100%;
 }
+
 .futerKontener {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
   display: flex;
   justify-content: center; 
-  text-align: center;      
+  text-align: center;       
 }
+
 .futerKontakt h4 {
   font-size: 1.3rem;
   margin-bottom: 12px;
   color: #ffffff;
 }
+
 .futerKontakt ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .futerKontakt li {
   margin-bottom: 8px;
   font-size: 0.95rem;
   color: #dddddd;
 }
+
 .futerKontakt a {
   color: #ff0000; 
   text-decoration: none;
   font-weight: bold;
 }
+
 .futerKontakt a:hover {
   text-decoration: underline;
 }
+
 .futerKopirajt {
   background-color: #050505; 
   border-top: 1px solid #1a1a1a;
@@ -443,429 +523,148 @@ a:hover {
   color: #888888;
 }
 
+/* =======================================================
+   JAVASCRIPT / INTERAKTIVNOST U TABELI
+   ======================================================= */
+
 table tr td:nth-child(3) {
-  transition: transform 0.25s ease, color 0.25s ease, font-weight 0.25s ease;
-  display: table-cell;
+    transition: transform 0.25s ease, color 0.25s ease, font-weight 0.25s ease;
+    display: table-cell;
 }
 
 .uvecana-cena {
-  transform: scale(1.20); 
-  color: #ff0000;         
-  font-weight: bold;      
+    transform: scale(1.20); 
+    color: #ff0000;         
+    font-weight: bold;       
+}
 
 table tr td:nth-child(2) {
-  cursor: pointer;
+    cursor: pointer;
 }
-}
-.tabela-kontejner {
-    width: 90%;
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow-x: auto; 
-}
-table {
-    width: 100% !important; 
-    min-width: 600px; 
-    margin: 0 auto;
-}
-@media screen and (max-width: 1024px) {
-    .nav {
-        position: relative;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .cenovnik p {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .nav h1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .nav a {
-        font-size: 18px;
-    }
-    .uslugeP2 {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
-    table td {
-        font-size: 16px;
-    }
-    .hederTabele, tr.heder td {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .nav h1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 20px;
-        padding: 5px;
-        border-bottom: 1px solid #333;
-        width: 100%;
-        text-align: center;
-    }
-    .cenovnik p {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 16px;
-        text-align: justify;
-    }
-    .animacija h1 {
-        font-size: 1.8rem;
-        padding: 15px 20px;
-    }
-    table td {
-        font-size: 14px;
-        padding: 8px;
-    }
-    tr.heder td {
-        font-size: 18px;
-    }
-}
-.tabela-kontejner {
-    width: 90%;
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow-x: auto;
-}
-    width: 100% !important; 
-    min-width: 600px;
-    margin: 0 auto;
-}
-@media screen and (max-width: 1024px) {
-    .nav {
-        position: relative;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .cenovnik p {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .nav h1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .nav a {
-        font-size: 18px;
-    }
-    .uslugeP2 {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
-    table td {
-        font-size: 16px;
-    }
-    .hederTabele, tr.heder td {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .nav h1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 20px;
-        padding: 5px;
-        border-bottom: 1px solid #333;
-        width: 100%;
-        text-align: center;
-    }
-    .cenovnik p {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 16px;
-        text-align: justify;
-    }
-    .animacija h1 {
-        font-size: 1.8rem;
-        padding: 15px 20px;
-    }
-.tabela-kontejner {
-    width: 90%;
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow-x: auto;
-}
-table {
-    width: 100% !important; 
-    min-width: 600px;
-    margin: 0 auto;
-}
-@media screen and (max-width: 1024px) {
-    .nav {
-        position: relative;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .cenovnik p {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .nav h1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .nav a {
-        font-size: 18px;
-    }
-    .uslugeP2 {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
-    table td {
-        font-size: 16px;
-    }
-    .hederTabele, tr.heder td {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .nav h1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 20px;
-        padding: 5px;
-        border-bottom: 1px solid #333;
-        width: 100%;
-        text-align: center;
-    }
-    .cenovnik p {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 16px;
-        text-align: justify;
-    }
-    .animacija h1 {
-        font-size: 1.8rem;
-        padding: 15px 20px;
-    }
-    table td {
-        font-size: 14px;
-        padding: 8px;
-    }
-    tr.heder td {
-        font-size: 18px;
-    }
-}
-.tabela-kontejner {
-    width: 90%;
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow-x: auto; 
-}
-table {
-    width: 100% !important; 
-    min-width: 600px; 
-    margin: 0 auto;
-}
-@media screen and (max-width: 1024px) {
-    .nav {
-        position: relative;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .cenovnik p {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .nav h1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .nav a {
-        font-size: 18px;
-    }
-    .uslugeP2 {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
-    table td {
-        font-size: 16px;
-    }
-    .hederTabele, tr.heder td {
-        font-size: 22px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .nav h1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 20px;
-        padding: 5px;
-        border-bottom: 1px solid #333;
-        width: 100%;
-        text-align: center;
-    }
-    .cenovnik p {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 16px;
-        text-align: justify;
-    }
-    .animacija h1 {
-        font-size: 1.8rem;
-        padding: 15px 20px;
-    }
-    /* =======================================================
-   RESPONZIVNOST (Media Queries) - Laptop, Tablet, Telefon
+
+/* =======================================================
+   RESPONZIVNOST (Media Queries)
    ======================================================= */
 
-/* Priprema kontejnera za tabelu (da može da se skrola na mobilnom) */
-.tabela-kontejner {
-    width: 90%;
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow-x: auto; /* Omogućava horizontalni skrol na malim ekranima */
-}
-
-/* Ovu liniju preklapamo sa tvog originalnog koda gde je bilo width: 1500px */
-table {
-    width: 100% !important; 
-    min-width: 600px; /* Ako ekran padne ispod 600px, tabela se neće više sužavati, već će se pojaviti skrol */
-    margin: 0 auto;
-}
-
-/* --- LAPTOP I MANJI MONITORI (do 1024px) --- */
 @media screen and (max-width: 1024px) {
+    .nav {
+        right: 5%;
+    }
+    .ime {
+        width: 60%;
+        font-size: 40px;
+    }
+    .pocetnaslika {
+        width: 35%;
+        right: 5%;
+    }
+    .uslugeSlike {
+        flex-wrap: wrap;
+    }
+    .uslugaKartica {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .glavnaNavigacija {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
     .nav {
         position: relative;
         right: 0;
-        display: flex;
         justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        flex-wrap: wrap;
+        width: 100%;
     }
-    .cenovnik p {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 18px;
+    .ime, .slogan, .indexP {
+        width: 90%;
+        padding-left: 0;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .pocetnaslika {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 70%;
+        margin: 30px auto;
+        display: block;
+    }
+    .dugme1 {
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+    .usluga-red, .usluga-red.obrnuto {
+        flex-direction: column;
+        text-align: center;
+    }
+    .usluga-red img {
+        max-width: 80%;
+        height: auto;
+    }
+    .tekst-blok h2 {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .tekst-blok ul {
+        padding-left: 0;
+        display: inline-block;
+        text-align: left;
+    }
+    .podnaslov {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
     }
 }
 
-/* --- TABLET (do 768px) --- */
-@media screen and (max-width: 768px) {
-    .nav h1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+@media screen and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
         gap: 15px;
     }
     .nav a {
         font-size: 18px;
     }
-    .uslugeP2 {
-        font-size: 1rem;
-        padding: 0 15px;
+    .ime {
+        font-size: 32px;
     }
-    table td {
-        font-size: 16px;
+    .slogan h2 {
+        font-size: 26px;
     }
-    .hederTabele, tr.heder td {
-        font-size: 22px;
+    .pocetnaslika {
+        width: 95%;
     }
-}
-
-/* --- MOBILNI TELEFONI (do 480px) --- */
-@media screen and (max-width: 480px) {
-    .nav h1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 20px;
-        padding: 5px;
-        border-bottom: 1px solid #333;
+    .uslugaKartica {
         width: 100%;
-        text-align: center;
+        height: 350px;
     }
-    .cenovnik p {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 16px;
-        text-align: justify;
+    .usluga-red img {
+        max-width: 100%;
+    }
+    .tekst-blok h2 {
+        font-size: 32px;
+    }
+    .tekst-blok li {
+        font-size: 18px;
+    }
+    .dugme2 button {
+        font-size: 22px;
+        padding: 15px;
     }
     .animacija h1 {
         font-size: 1.8rem;
         padding: 15px 20px;
     }
-    
-    /* Zadržavamo tabelu čitljivom na telefonu */
-    table td {
-        font-size: 14px;
-        padding: 8px;
+    .kontaktP {
+        font-size: 2rem;
     }
-    tr.heder td {
-        font-size: 18px;
+    .slikaKontakt, .slikaCenovnik, .naslov img {
+        width: 80%;
     }
 }
-    /* Popravka razmaka za navigaciju i logo na stranici Cenovnik */
-body > center:nth-of-type(1) {
-    margin-bottom: 20px; /* Razmak ispod logo slike */
-}
-
-.nav {
-    margin: 20px 0 40px 0; /* Dodaje prostor iznad i ispod navigacionog menija */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.nav h1 {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* Osiguravamo da tabela nikada ne ide preko navigacije */
-.tabela-kontejner {
-    margin-top: 20px;
-}
-    
