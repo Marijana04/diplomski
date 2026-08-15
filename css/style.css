@@ -845,4 +845,27 @@ table {
         font-size: 18px;
     }
 }
+    /* Popravka razmaka za navigaciju i logo na stranici Cenovnik */
+body > center:nth-of-type(1) {
+    margin-bottom: 20px; /* Razmak ispod logo slike */
+}
+
+.nav {
+    margin: 20px 0 40px 0; /* Dodaje prostor iznad i ispod navigacionog menija */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav h1 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Osiguravamo da tabela nikada ne ide preko navigacije */
+.tabela-kontejner {
+    margin-top: 20px;
+}
     
