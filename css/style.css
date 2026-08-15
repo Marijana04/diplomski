@@ -21,14 +21,17 @@ body{
     align-items: center;
     background-color: black;
     padding: 15px 80px;
+    width: 100%;
 }
 
 .logo img{
     height: 60px;
     width: 150px;
+    object-fit: contain;
     display: block;
 }
 
+/* Originalna navigacija za ostale stranice (Index, O nama...) */
 .nav {
     display: flex;
     gap: 30px;
@@ -272,11 +275,6 @@ body{
     transition: 0.5s;
 }
 
-.logo img {
-    max-height: 80px;
-    margin-bottom: 15px;
-}
-
 .slikaCenovnik {
     display: block;
     margin: 40px auto;
@@ -286,37 +284,39 @@ body{
 /* Kontejner za tabelu zbog skrola na telefonu */
 .tabela-kontejner {
     width: 95%;
-    max-width: 1500px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 40px auto;
     overflow-x: auto;
 }
 
 table {
     width: 100%;
-    min-width: 700px;
+    min-width: 650px;
     border-collapse: collapse;
     border: 5px solid red;
     font-family: sans-serif;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
-.hederTabele {
-   font-size: 30px;
+tr.heder {
+   font-size: 26px;
+   background-color: #111;
 }
 
 td{
     color: white;
-    padding: 10px;
+    padding: 12px 15px;
     border-bottom: 1px solid #333;
 }
 
 .cenovnik p{
     font-size: 20px;
     font-weight: bold;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 20px auto;
+    max-width: 1000px;
     text-align: center;
+    padding: 0 20px;
 }
 
 a {
@@ -363,21 +363,18 @@ a:hover {
 }
 
 @keyframes kacenjeZnak {
-    0% {
-        transform: rotate(-8deg);
-    }
-    100% {
-        transform: rotate(8deg);
-    }
+    0% { transform: rotate(-8deg); }
+    100% { transform: rotate(8deg); }
 }
 
 .uslugeP2 {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 0 20px;
     text-align: center;
     font-size: 1.2rem;
     color: #ffffff;
+    line-height: 1.6;
 }
 
 /* =======================================================
@@ -547,9 +544,6 @@ table tr td:nth-child(2) {
    ======================================================= */
 
 @media screen and (max-width: 1024px) {
-    .nav {
-        right: 5%;
-    }
     .ime {
         width: 60%;
         font-size: 40px;
@@ -571,7 +565,7 @@ table tr td:nth-child(2) {
     .glavnaNavigacija {
         flex-direction: column;
         padding: 20px;
-        gap: 20px;
+        gap: 15px;
     }
     .nav {
         position: relative;
@@ -579,6 +573,7 @@ table tr td:nth-child(2) {
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
+        gap: 20px;
     }
     .ime, .slogan, .indexP {
         width: 90%;
@@ -626,7 +621,7 @@ table tr td:nth-child(2) {
 @media screen and (max-width: 480px) {
     .nav {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
     .nav a {
         font-size: 18px;
